@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="bago.css">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Space Mono', monospace;
+      }
+      .banner-image {
+        background-image: url('WP.jpg');
+        background-size: cover;
+        margin: 5px;
+      }
+      .imgcon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+      }
+      .imgcon img{
+        object-fit: cover;
+        height: 250px;
+        width: 500px;
+        
+      }
+
+    </style>
+
+
+  </head>
+  <body class= "">
+    <!-- Navbar  -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" id="HOME">
+      <div class="container" >
+        <a class="navbar-brand" href="#">National Aeronautical and Space Administration</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">HOME |</a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link text-white" href="#">|</a> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#APOD">APOD |</a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link text-white" href="#">|</a> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#SEARCH">SEARCH |</a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link text-white" href="#">|</a> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#ROVER">ROVER |</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="indexABOUT.html">ABOUT | </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" id= "navTIME"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner Image  -->
+    <div
+      class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="content text-center ">
+        <h1 class="text-white">N A S A</h1>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="container my-20 d-grid gap-5 text-center justify-content-center align-items-center">
+      <div class="p-5 border"  id= "APOD">
+        <h3 class= "text-center">
+          WHAT DID HUBBLE SAW ON YOUR BIRTHDAY? 
+        </h3>
+        <p>
+          Note: Date must be between Jun 16, 1995 to Present
+        </p> 
+        <p class= "text-center">
+          LET'S FIND OUT!
+        </p>
+        <input type= "date" id= "dateAPOD">
+        <p>
+
+        </p>
+        <h4 id= "apodTITLE">
+          
+        </h4>
+        <p id= "apodDATE">
+
+        </p>
+        <div class = "imgcon" id= "apodIMG">
+          
+        </div>
+        <div class = "imgcon" id= "apodVID">
+          <iframe src=  "" frameborder="0"></iframe>
+        </div>
+
+        
+        <p id= "apodEXP">
+
+        </p>
+      </div>
+
+
+      <div class="search p-5 border" id= "SEARCH">
+        <h3>
+          NASA Image Library
+        </h3>
+        <p>
+          Search the NASA Library for Anything!
+        </p>
+        <input type= "text" id= "libTEXT" placeholder= "   Search In Here"> 
+        <p>
+          
+        </p>
+        <h4 id= "textTITLE1" > 
+          
+        </h4>
+        <p id= "textDESC1">
+
+        </p>
+          <div class = "imgcon" id = "textIMAGE1">
+
+          </div>
+          <h4 id= "textTITLE2"> 
+            
+          </h4>
+          <p id= "textDESC2">
+
+          </p>
+          <div class = "imgcon" id = "textIMAGE2">
+
+          </div>
+          <h4 id= "textTITLE3"> 
+            
+          </h4>
+          <p id= "textDESC3">
+
+          </p>
+          <div class = "imgcon" id = "textIMAGE3">
+
+          </div>
+        
+       
+        
+      </div>
+
+
+
+      <div class="p-5 border" id= "ROVER" style= "margin-bottom: 10px;">
+        <h3>
+          What did MARS Rover Saw Today?
+        </h3>
+        <p>
+          Let's Find Out!
+        </p>
+        <input type= "date" id= "rovDATE">
+        
+        <h4 id= "rovTITLE" > 
+          
+        </h4>
+        <p id = "rovSTATS">
+
+        </p>
+        <p id= "rovLAND">
+          
+        </p>
+        <p id= "rovLAUNCH">
+          
+        </p>
+        
+        <div class = "imgcon" id= "rovIMG">
+
+        </div>
+
+      </div>
+    </div>
+    <footer class="footer bg-dark ">
+      <div class="container">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="indexABOUT.html">about us</a></li>
+              <li><a href="https://api.nasa.gov/">API</a></li>
+              <li><a href="https://www.nasa.gov">NASA</a></li>
+            </ul>
+          </div>
+        </div>
+
+   </footer>
+   
+    <script src= "indexJS.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var nav = document.querySelector('nav');
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add('bg-dark', 'shadow');
+        } else {
+          nav.classList.remove('bg-dark', 'shadow');
+        }
+      });
+    </script>
+  </body>
+</html>
